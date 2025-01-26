@@ -1,0 +1,177 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f1e5; /* Нежно бежевый фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Навигация */
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Главная страница */
+.home-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff; /* Белая рамка */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для фото */
+}
+
+.profile h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 22px;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Персональные данные с анимацией */
+.personal-data {
+    margin-top: 30px;
+}
+
+#personal-text {
+    font-size: 20px;
+    color: #555;
+    font-weight: normal;
+    animation: fadeInText 3s ease-out;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Навыки */
+.skills-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    color: #00bcd4;
+    margin-top: 15px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Контакты */
+.contacts-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 5px solid #00bcd4;
+}
+
+.contacts-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacts-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts-section ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contacts-section ul li a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacts-section ul li a:hover {
+    text-decoration: underline;
+
+
+}
